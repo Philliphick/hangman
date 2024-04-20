@@ -4,9 +4,9 @@ import { HangmanDrawing } from './HangmanDrawing'
 import { HangmanWord } from './HangmanWord'
 import { Keyboard } from './Keyboard'
 
-function getWord() {
-  return words[Math.floor(Math.random() * words.length)]
-}
+// function getWord() {
+//   return words[Math.floor(Math.random() * words.length)]
+// }
 
 function App() {
 const [wordToGuess, setWordToGuess] = useState(() => {
@@ -60,6 +60,7 @@ useEffect(() => {
 
   console.log(wordToGuess)
   return (
+
     <>
     <div style={{
       'maxWidth': '800px',
@@ -69,6 +70,17 @@ useEffect(() => {
       'margin': '0 auto',
       'alignItems': 'center'
     }}>
+
+{/* <div style={{fontSize: '2rem', top: '0', left: '0', position: 'absolute',
+ padding: '0 1rem', flexDirection: 'row', display: 'flex'}}><h3>Topics:</h3>
+<button style={{margin: '2rem 1rem', fontSize: '1.5rem', height: '50%'}} onClick={}>Film</button>
+<button style={{margin: '2rem 1rem', fontSize: '1.5rem', height: '50%'}}>Music</button>
+<button style={{margin: '2rem 1rem', fontSize: '1.5rem', height: '50%'}}>Sport</button>
+<button style={{margin: '2rem 1rem', fontSize: '1.5rem', height: '50%'}}>Food</button>
+
+
+</div> */}
+
 <div style={{
         fontSize: '2rem',
         textAlign: 'center',
